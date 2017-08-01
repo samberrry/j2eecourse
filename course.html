@@ -1,0 +1,145 @@
+
+SESSION 2
+
+primeface
+
+***define them in web.xml as contex
+
+****primeface has ajax nby default : to disable => ajax attribute
+ajax = "false"
+
+to implement SPA => GWT
+
+BEST PRACTICE: use of value instead of binding component
+
+
+AUTHENTICATION------ge adn
+=> web.xml
+=> tomee.xml : resources
+=> server.xml : realm
+
+ similar to basic authentication => it needs https
+
+ ------------
+ EJB object pooling
+ interface => @Local annotation
+ interface => @Remote annotation
+ two interfaces
+
+ ===============================================================================
+ ===============================================================================
+ ===============================================================================
+ ===============================================================================
+SESSION 3
+
+JNDI--->similar to RMI
+EJB uses JNDI
+CORBA RMI
+
+online execution => REST SOAP RMI JNDI,... all of them
+Message Broker => offline
+
+all of them are based-on socket
+
+*use case => online shopping => gateway =>transactions must be online
+
+Message Containers => guarantees messages
+
+Weblogic and Jboss => best for Clustering
+
+ResultSet cant be serializable
+ResultSet to ArrayList
+
+AutoClosable....
+
+business role @RolesAllowed => error code 500
+Tow different datasource in application server
+JTA => @PersistenceContext
+1-non transactional
+2-transactional
+
+define in persistent.xlm
+and then define datasources in tomee
+
+*Best practice => JTA
+
+business signal
++++++++++++++++++++++++++++++++++++++++++++++++
+OSGi-Open Service Gateway Initiative
+switches simply between versions, JDKs, JARs, Application Servers (Tomcat8=>9)
+=>downtime to 0
+
+portal specifications
++++++++++++++++++++++++++++++++++++++++++++++++
+ActiveMQ
+DEFAULT_BROKER_URL
+dont send data as object - instead send as JSON data
+
+===============================================================================
+===============================================================================
+===============================================================================
+===============================================================================
+SESSION 4
+
+Batis
+
+JPA is not implemented in Batis
+
+When to use Batis??? =>> Stored procedures
+
+Batis can turn off cache layer => communicating without cache
+Batis is a generic data access
+
+like old hibername we have two files :
+batis.xml => reference to person.xml
+preson.xml => definition for person functions
+tag's bodies are just like BD Console
+
+NO-SQL
+unstructured data will be caused to No-SQL
+MongoDB is most popular and worst case
+
+OWASP
+===============================================================================
+===============================================================================
+===============================================================================
+===============================================================================
+SESSION 5
+
+BPMS
+
+Process... including human tasks and machine tasks (such as communicating with
+WebService...)
+A process is not limited to only one service!
+
+* nearly all system analysises are Process-based
+
+form designer in process-based system is just a tool
+
+Tow branches to design processes:
+
+PDL-Process Definition Languange
+BPMN-Business Process Model and Notation
+
+* Difference between PDL and BPMN is on notation
+* A process is not identified by developer or analyzer
+
+data-oriented analysis
+process-oriented analysis
+behavior-oriented analysis
+
+******** PDL
+
+* fasad apex veka
+
+Process engine => 1- Execution Servuce (ES) 2- Repository Service (RS)
+JDPL will be deployed on RS
+users uses ES
+
+with ES we can start processes
+
+most important table is HIST....
+
+BPMS is integrated with hibernate
+
+JBPM 4.0 best performance - v 6.0 is highweight
